@@ -19,8 +19,7 @@ async function getEval(message, args) {
     
     var msg12 = `Código: \n \`\`\`js\n${code}\`\`\`\n Resultado: \n\`\`\`LDIF\n ${evaled}\`\`\` \n`
     // ei, ela tá normal, ela só não tem perm pra falar no LabNegro
-    message.channel.sendMessage(msg12.replace(/NDUyOTYwNDQ4MTcwNTU3NDUw.Dg1PtQ.XgZ9iJnghj22LZPjEes2jD4DrVs/g, `Quer saber por que?`))
-    
+    message.channel.sendMessage(msg12.replace(/process.env.TOKEN/g, 'cu')
   } catch (err) {
     message.channel.sendMessage(`Código:\n\`\`\`js\n${code}\`\`\`\n **Erro:** \n\`\`\`LDIF\n${err}\`\`\` \n`)
   }
@@ -139,4 +138,4 @@ client.on('message', message => {
   }
 });
   
-client.login(config.token) 
+client.login(process.env.TOKEN) 
