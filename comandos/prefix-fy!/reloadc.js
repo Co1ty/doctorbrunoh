@@ -9,7 +9,7 @@ const dono = "392053413741068288"
 
     delete require.cache[require.resolve(`./${args[0]}.js`)];
 
-    message.channel.sendMessage("**<a:loading:440944807431503874> " + message.author + " Comando " + args[0] + " reiniciado com sucesso!**");
+    message.channel.sendMessage("**<:correto:438399398733414401> " + message.author + " Comando " + args[0] + " reiniciado com sucesso!**");
 
     } else {
     message.reply("**<:Errado:454383164652257292> Você não é o Dono do Bot para executar este comando, tente com outra raposa! :wink:**");

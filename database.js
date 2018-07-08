@@ -35,7 +35,8 @@ xp:{
    lvl: { type: Number },
 money:{type:Number},
   repexpira: { type: Number, default: "0" },
-rep:{type:Number}
+rep:{type:Number},
+  sobremim:{type:String, default: "Eu sou burro e não sei usar comando de sobremim!" }
 })
 var guild = mongoose.model('Guild',Guild)
 exports.Guild = guild

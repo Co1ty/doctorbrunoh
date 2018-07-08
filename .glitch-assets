@@ -48,3 +48,4 @@ exports.run = (client, msg, args, config) => {
     },
       permissionmsg: '<:Errado:454383164652257292> Voce nao tem permissao para isso!'
 }
+{"name":"image.png","date":"2018-07-01T23:22:30.900Z","url":"https://cdn.glitch.com/8320343d-35c4-4816-a118-eb19d7f2521c%2Fimage.png","type":"image/png","size":294060,"imageWidth":1360,"imageHeight":768,"thumbnail":"https://cdn.glitch.com/8320343d-35c4-4816-a118-eb19d7f2521c%2Fthumbnails%2Fimage.png","thumbnailWidth":330,"thumbnailHeight":187,"dominantColor":"rgb(210,211,214)","uuid":"kqtt6lXEjK6OskTv"}

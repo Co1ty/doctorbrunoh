@@ -16,7 +16,7 @@ exports.run = (client, message) => {
     } else if (guildVerification == "3") {
     return ("Alto")
 	    } else if (guildVerification == "4") {
-    return ("Muito Auto")
+    return ("Muito Alto")
     }
   }
   function tipo() {
@@ -59,6 +59,20 @@ exports.run = (client, message) => {
     
     }
   }
+          const region = {
+          "brazil": 'Brasil',
+          "syngapore": 'Singapura',
+          "eu-central": 'Europa Central',
+          "eu-west": 'Europa Ocidental',
+          "hongkong": 'Hong Kong',
+          "japan": 'Japão',
+          "russia": 'Russia',
+          "sydney": 'Sydney',
+          "us-central": 'Estados Unidos Centrais',
+          "us-east": 'Leste dos Estados Unidos',
+          "us-south": 'Sul dos Estados Unidos',
+          "us-west": 'Oeste dos Estados Unidos'
+        };
   
 const Discord = require('discord.js');
 const embed = new Discord.RichEmbed()
@@ -73,7 +87,7 @@ const embed = new Discord.RichEmbed()
 .addField("📆 Criado em:", moment(message.guild.createdAt).format('lll'), true)
 .addField(`📆 Entrei Aqui Em:`, moment(message.guild.joinedAt).format(`lll`), true)
 .addField(`:robot: Bot's:`, message.guild.members.filter(member => member.user.bot).size, true)
-.addField(`🌎 Região:`, message.guild.region, true)
+.addField(`🌎 Região:`, region[message.guild.region], true)
 .addField(`<:correto:438399398733414401> Nível de Verificação:`, `${verificationLevel()}`, true)
 .setTimestamp()
 .setFooter(message.author.username, client.user.avatarURL);
