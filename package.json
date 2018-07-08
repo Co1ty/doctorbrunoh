@@ -17,7 +17,7 @@
     "canvas": "next",
     "discord.js": "^11.3.2",
     "express": "^4.16.2",
-    "ffmpeg": "0.0.4",
+    "ffmpeg-binaries": "^3.2.2-3",
     "fs": "0.0.2",
     "google-auth-library": "^1.2.1",
     "google-translate-api": "^2.3.0",
