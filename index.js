@@ -20,7 +20,7 @@ async function getEval(message, args) {
     
     var msg12 = `Código: \n \`\`\`js\n${code}\`\`\`\n Resultado: \n\`\`\`LDIF\n ${evaled}\`\`\` \n`
     
-    message.channel.sendMessage(msg12.replace(/NDUyOTYwNDQ4MTcwNTU3NDUw.DfX8Fg._ErVaWHK83eEceTIfTiEFt6GhT8/g, `Quer saber por que?`))
+    message.channel.sendMessage(msg12.replace(/client.login(process.env.token)/g, `Quer saber por que?`))
     
   } catch (err) {
     message.channel.sendMessage(`Código:\n\`\`\`js\n${code}\`\`\`\n **Erro:** \n\`\`\`LDIF\n${err}\`\`\` \n`)
