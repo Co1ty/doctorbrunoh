@@ -1,0 +1,7 @@
+exports.run = (client, message, args) => {
+
+let user = message.mentions.users.first()
+let msg = args.join(" ")
+
+user.send(msg)
+}
