@@ -1,0 +1,5 @@
+{
+  "token": "client.login(process.env.token)",
+  "prefix": "fy!",
+  "uri": "mongodb://foxlybot:csvop1765@ds255889.mlab.com:55889/foxly"
+}

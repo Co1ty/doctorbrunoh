@@ -1,0 +1,39 @@
+{
+  "name": "foxly",
+  "version": "0.0.1",
+  "description": "Foxly bot - Desenvolvimento!",
+  "main": "node index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "8.9.4"
+  },
+  "author": "Bruno Otávio",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/translate": "^1.1.0",
+    "canvas": "next",
+    "discord.js": "^11.3.2",
+    "express": "^4.16.2",
+    "ffmpeg-binaries": "^3.2.2-3",
+    "fs": "0.0.2",
+    "google-auth-library": "^1.2.1",
+    "google-translate-api": "^2.3.0",
+    "googleapis": "^25.0.0",
+    "jimp": "^0.2.28",
+    "moment": "^2.20.1",
+    "moment-duration-format": "^2.2.2",
+    "mongoose": "^5.1.5",
+    "opusscript": "0.0.6",
+    "pixel-util": "0.0.2",
+    "random-puppy": "^1.1.0",
+    "save": "^2.3.2",
+    "simple-youtube-api": "^5.0.1",
+    "snekfetch": "^4.0.4",
+    "weather-js": "^2.0.0",
+    "youtube-info": "^1.2.0",
+    "ytdl-core": "^0.20.1"
+  }
+}

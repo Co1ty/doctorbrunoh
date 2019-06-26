@@ -1,0 +1,51 @@
+exports.run = (client, msg, args, config) => {
+        var Eval    = args.join(' '),
+        guild   = msg.channel.guild,
+        channel = msg.channel;
+
+  
+        if(msg.author.id !== '392053413741068288')
+        return msg.channel.send("<:Errado:454383164652257292> **Você nao tem permissao para fazer isso!**")
+        
+    if (Eval.size === 0) return msg.channel.send("<:Errado:454383164652257292> **Você precisa dizer alguma coisa para eu avaliar!**") 
+    if(!Eval) return
+       try{
+         msg.channel.send({
+           embed: {
+          author: {name: 'Sucesso!'},
+          title: ' Comando:',
+          description: `\`\`\`js\n${Eval}\n\`\`\``,
+          color: ('55512'),
+          fields: [
+            {
+            name: ' Resultado:',
+            value: `\`\`\`js\n${eval(Eval)}\n\`\`\``
+          }]
+           }
+         })
+  
+       }catch(err){
+         msg.channel.send({
+           embed: {
+          author: {
+            name: 'Ocorreu um erro!'
+          },
+          title: ' Comando:',
+          description: `\`\`\`js\n${Eval}\n\`\`\``,
+          color: ('55512'),
+          fields: [
+            {
+            name: ` Resultado: ${err.name}`,
+            value: `\`\`\`js\n${err.msg}\n\`\`\``
+          }]
+           }
+         })
+       }
+  },
+  {
+    requirements: {
+      userIDs: ['270214506548953088']
+    },
+      permissionmsg: '<:Errado:454383164652257292> Voce nao tem permissao para isso!'
+}
+{"name":"image.png","date":"2018-07-01T23:22:30.900Z","url":"https://cdn.glitch.com/8320343d-35c4-4816-a118-eb19d7f2521c%2Fimage.png","type":"image/png","size":294060,"imageWidth":1360,"imageHeight":768,"thumbnail":"https://cdn.glitch.com/8320343d-35c4-4816-a118-eb19d7f2521c%2Fthumbnails%2Fimage.png","thumbnailWidth":330,"thumbnailHeight":187,"dominantColor":"rgb(210,211,214)","uuid":"kqtt6lXEjK6OskTv"}
